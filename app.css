@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+}
+
+input,
+label {
+
+    display: block;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    margin-top: 20px;
+    grid-area: main;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.billing-title {
+    grid-area: title;
+    margin-bottom: 0px;
+}
+
+.billing-subtitle {
+    grid-area: subtitle;
+    font-size: 1em;
+    color: gray;
+    margin: 0px;
+}
+
+.name-lbl {
+    grid-area: name-lbl;
+}
+
+.name-txt {
+    grid-area: name-txt;
+}
+
+.email-lbl {
+    grid-area: email-lbl;
+}
+
+.email-txt {
+    grid-area: email-txt;
+}
+
+.address-lbl {
+    grid-area: address-lbl;
+}
+
+.address-txt {
+    grid-area: address-txt;
+}
+
+.country-lbl {
+    grid-area: country-lbl;
+}
+
+.country-cmb {
+    grid-area: country-cmb;
+}
+
+.city-lbl {
+    grid-area: city-lbl;
+}
+
+.city-txt {
+    grid-area: city-txt;
+}
+
+.zip-lbl {
+    grid-area: zip-lbl;
+}
+
+.zip-txt {
+    grid-area: zip-txt;
+}
+
+.phone-lbl {
+    grid-area: phone-lbl;
+}
+
+.phone-txt {
+    grid-area: phone-txt;
+}
+
+.box {
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.billing-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.8fr 0.5fr 2fr 0.5fr 0.8fr;
+
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+
+    grid-template-areas:
+        "title . ."
+        "subtitle subtitle ."
+        "name-lbl email-lbl phone-lbl"
+        "name-txt email-txt phone-txt"
+        "address-lbl . ."
+        "address-txt address-txt address-txt"
+        "country-lbl city-lbl zip-lbl"
+        "country-cmb city-txt zip-txt";
+
+}
+
+.edit-img {
+    height: 15px;
+    width: 15px;
+    grid-area: edit-img;
+    align-self: self-end;
+    justify-self: self-end;
+}
+
+.shipping-title {
+    grid-area: s-title;
+    margin: 0px;
+}
+
+.shipping-subtitle {
+    grid-area: s-subtitle;
+    font-size: 1em;
+    color: gray;
+    margin: 0px;
+}
+
+.address1-container {
+    grid-area: address1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+}
+
+.address2-container {
+    grid-area: address2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+}
+
+.adr-box {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.address1-container,
+.address2-container:active {
+    border: 3px solid blue;
+}
+
+.address1-title,
+.address2-title {
+    margin-bottom: 15px;
+}
+
+.address1-name,
+.address2-name {
+    margin-bottom: 10px;
+}
+
+.shipping-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 3fr;
+
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+
+    grid-template-areas:
+        "s-title . ."
+        "s-subtitle . ."
+        "address1 address2 edit-img";
+
+}
+
+.payment-title {
+    grid-area: p-title;
+    margin: 0px;
+}
+
+.payment-subtitle {
+    grid-area: p-subtitle;
+    font-size: 1em;
+    color: gray;
+    margin: 0px;
+}
+
+.credit-card {
+    grid-area: credit-card;
+}
+
+.paypal {
+    grid-area: paypal;
+}
+
+.cash-delivery {
+    grid-area: cash-delivery;
+}
+
+.payment-method-title {
+    grid-area: payment-method-title;
+    font-size: 1.5em;
+}
+
+.payment-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr;
+
+    grid-template-areas:
+        "p-title . . ."
+        "p-subtitle p-subtitle p-subtitle ."
+        "payment-method-title . . ."
+        "credit-card paypal cash-delivery .";
+
+}
+
+.image-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.paypal,
+.credit-card,
+.cash-delivery {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-box {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.lbl {
+    font-size: 15px;
+}
+
+.aside-container {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 80vh;
+}
+
+body {
+    margin: 0px;
+
+    display: grid;
+
+    grid-template-columns: 0.5fr 3fr 1.5fr 0.5fr;
+    grid-template-rows: 2fr 1fr;
+
+    grid-gap: 10px;
+
+    grid-template-areas:
+        ". main aside ."
+        ". main . .";
+
+}
+
+.order-id {
+    background-color: rgb(244, 244, 244);
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.product-lbl {
+    grid-area: product-lbl;
+}
+
+.product-desc-lbl {
+    grid-area: product-desc-lbl;
+}
+
+.product-price {
+    grid-area: product-price;
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.product-description1 {
+    grid-area: product-description1;
+}
+
+.product-price1 {
+    grid-area: product-price1;
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.product-description2 {
+    grid-area: product-description2;
+}
+
+.product-price2 {
+    grid-area: product-price2;
+}
+
+
+.products {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+
+    grid-template-areas:
+        "product-lbl product-desc-lbl product-price"
+        "image1 product-description1 product-price1"
+        "image2 product-description2 product-price2";
+
+}
+
+.product-image {
+    background-color: rgb(241, 146, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product-description2,
+product-description1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product-desc-name {
+    margin-top: 0px;
+}
+
+.product-desc-price {
+    margin-bottom: 0px;
+}
+
+.prod-lbl {
+    font-weight: bold;
+}
+
+.costs {
+    border-top: 1px solid rgb(187, 187, 187);
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    height: 40px;
+}
+
+.total-card {
+    background-color: rgb(250, 250, 250);
+}
+
+.total-card-lbl {
+    font-weight: bold;
+}

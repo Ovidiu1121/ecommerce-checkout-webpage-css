@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="main-container">
+        <section class="main-item billing-container">
+            <h3 class="billing-title">Billing Info</h3>
+            <h4 class="billing-subtitle">Lorem ipsum dolor sit amet consectetur</h4>
+            <label for="" class="name-lbl">Name</label>
+            <input type="text" class="name-txt box" placeholder="Enter name">
+            <label for="" class="email-lbl">Email Address</label>
+            <input type="text" class="email-txt box" placeholder="Enter email">
+            <label for="" class="phone-lbl">Phone</label>
+            <input type="text" class="phone-txt box" placeholder="Enter phone">
+            <label for="" class="address-lbl">Address</label>
+            <textarea name="" id="" class="address-txt box">Enter full address</textarea>
+            <label for="" class="country-lbl">Country</label>
+            <select name="" id="" class="country-cmb box">
+                <option value="select-country">Select Country</option>
+                <option value="romania">Romania</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <option value="portugal">Portugal</option>
+                <option value="nepal">Nepal</option>
+                <option value="senegal">Senegal</option>
+                <option value="egypt">Egypt</option>
+            </select>
+            <label for="" class="city-lbl">City</label>
+            <input type="" class="city-txt box" placeholder="Enter City">
+            <label for="" class="zip-lbl">Zip / Postal Code</label>
+            <input type="text" class="zip-txt box" placeholder="Enter Postal code">
+        </section>
+        <section class="main-item shipping-container">
+            <h3 class="shipping-title">Shipping Info</h3>
+            <h4 class="shipping-subtitle">Lorem ipsum dolor sit amet consectetur</h4>
+            <div class="address1-container adr-box">
+                <span class="address1-title">Address 1</span>
+                <span class="address1-name">Bradley McMillian</span>
+                <span class="address1-address">109 Clarksburg Park Road Show Low, AZ 85901</span>
+                <span class="address1-phone">Mo. 012-345-6789</span>
+            </div>
+            <div class="address2-container adr-box">
+                <span class="address2-title">Address 1</span>
+                <span class="address2-name">Bradley McMillian</span>
+                <span class="address2-address">109 Clarksburg Park Road Show Low, AZ 85901</span>
+                <span class="address2-phone">Mo. 012-345-6789</span>
+            </div>
+            <img src="img/edit.png" alt="" class="edit-img">
+        </section>
+        <section class="main-item payment-container">
+            <h3 class="payment-title">Payment Info</h3>
+            <h4 class="payment-subtitle">Lorem ipsum dolor sit amet consectetur</h4>
+            <p class="payment-method-title">Payment method:</p>
+            <div class="credit-card payment-box">
+                <img src="img/credit_card.png" alt="" class="credit-card-img image-icon">
+                <p class="lbl">Credit / Debit Card</p>
+            </div>
+            <div class="paypal payment-box">
+                <img src="img/paypal.png" alt="" class="paypal-img image-icon">
+                <p class="lbl">Paypal</p>
+            </div>
+            <div class="cash-delivery payment-box">
+                <img src="img/cash-delivery.png" alt="" class="cash-delivery-img image-icon">
+                <p class="lbl">Cash or Delivery</p>
+            </div>
+        </section>
+    </main>
+
+    <aside class="aside-container">
+        <div class="aside-item order-id">
+            <span class="order-id-lbl">Order Summary</span>
+            <span class="order-id-value">#MN0124</span>
+        </div>
+        <section class="aside-item products">
+            <span class="product-lbl prod-lbl">Product</span>
+            <span class="product-desc-lbl prod-lbl">Product Desc</span>
+            <span class="product-price prod-lbl">Price</span>
+            <hr>
+            <div class="product-image image1">
+                <p class="product-image-size1">280 x 280</p>
+            </div>
+            <div class="product-description1">
+                <p class="product-desc-name">Waterproof Mobile Phone</p>
+                <div class="product-desc-rating1">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+                <p class="product-desc-price">$ 260 x 2</p>
+            </div>
+            <span class="product-price1">$ 520</span>
+            <hr>
+            <div class="product-image image2">
+                <p class="product-image-size2">280 x 280</p>
+            </div>
+            <div class="product-description2">
+                <p class="product-desc-name">Smartphone Dual Camera</p>
+                <div class="product-desc-rating2">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="product-desc-price">$ 260 x 1</p>
+            </div>
+            <span class="product-price2">$ 260</span>
+        </section>
+        <section class="aside-item costs">
+            <div class="card">
+                <span class="card-left">Sub Total:</span>
+                <span class="card-right">$ 780</span>
+            </div>
+            <div class="card">
+                <span class="card-left">Discount:</span>
+                <span class="card-right">- $ 78</span>
+            </div>
+            <div class="card">
+                <span class="card-left">Shipping Charge:</span>
+                <span class="card-right">$ 25</span>
+            </div>
+            <div class="card">
+                <span class="card-left">Estimated Tax:</span>
+                <span class="card-right">$ 18.20</span>
+            </div>
+            <div class="card total-card">
+                <span class="card-left total-card-lbl">Total:</span>
+                <span class="card-right">$ 745.2</span>
+            </div>
+        </section>
+    </aside>
+
+</body>
+
+</html>
